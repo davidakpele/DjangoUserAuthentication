@@ -1,0 +1,306 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+:root{
+  --light-block: block;
+  --light-inline-block: inline-block;
+  --dark-block: none;
+  --dark-inline-block: none;
+  --body-bg: #fafafa;
+  --text-color: #2b2b2b;
+  --header-bg: #fff;
+  --hero-bg: #ecf2e6;
+  --hero-heading-color: #0f0f1f;
+  --hero-description-color: #397305;
+  --stats-bg: #fff;
+  --stats-icon-bg: #fff;
+  --border: #eaeaea;
+  --border-2: #f7f7f7;
+  --border-3: #ccc;
+  --feature-bg-1: #f2f2ec;
+  --feature-bg-2: #fff2e4;
+  --feature-bg-3: #e3f3fe;
+  --feature-bg-4: #f2ebfe;
+  --feature-heading-color: #0f0f1f;
+  --feature-description-color: #22223a;
+  --feature-link-color: #141414;
+  --market-bg: #ffffff;
+  --market-table-bg: #ffffff;
+  --market-border: #eaeaea;
+  --sort-icon: #bdbdbd;
+  --sort-icon-active: #000;
+  --why-choose-bg: #1a3502;
+  --testimonial-bg: #fff;
+  --testimonial-bg-2: #ecf2e6;
+  --footer-bg: #ecf2e6;
+  --accordion-bg: #fff;
+  --accordion-shadow: #f7f7f7;
+  --accordion-border: #f7f7f7;
+  --accordion-hover: #f7f7f7;
+  --section-header-bg: #ecf2e6;
+  --section-search-form-bg: #fff;
+  --preloader-bg-1: #e8f8d8;
+  --preloader-bg-2: #d5eebb;
+  --placeholder-bg: darkgray;
+  --placeholder-bg-2: linear-gradient(to right, #eeeeee 10%, #dddddd 18%, #eeeeee 33%);
+  --form-button-inactive-bg: #eaeaea;
+  --form-button-inactive-text-color: #999;
+  --alert-bg: #fff;
+  --alert-bg-dark: #f1f1f1;
+  --not-found-error-text-color: #dddddd;
+  --dashboard-header-submenu-hover: #f3f8ee;
+  --services-bg: #f7fdf2;
+  --service-bg-1: #fcecd8;
+  --service-bg-2: #e7f2de;
+}
+body {
+  background-color: #1a1a1a;
+  background-color: var(--body-bg);
+  box-sizing: border-box;
+  color: #e6e6e6;
+  color: var(--text-color);
+  font-family: Karla, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  max-width: 100vw;
+  overflow-x: hidden;
+  padding-top: 7rem;
+}
+.auth_body{
+  background-image: url(../images/auth-background.428f1f316f1f3cbf27f1.png);
+}
+.auth {
+    background-color: #141414;
+    background-color: var(--header-bg);
+    border-radius: 1.2rem;
+    max-width: 100%;
+    padding: 3.6rem;
+    width: 45rem;
+}
+.registerLink{
+    color: #f9aa4b;
+    text-decoration: none;
+}
+.login-form {
+  align-items: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  padding: 0 2.4rem;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+.auth__heading {
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-bottom: 6px;
+  text-align: center;
+  color: var(--text-color);
+  font-family: Karla, sans-serif;
+}
+.sub_header{
+  text-align: center;
+}
+.auth__heading-sub-text {
+  color: var(--text-color);
+  font-family: Karla, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  
+}
+.inputs {
+  margin-bottom: 10px;
+}
+
+.text-center {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.headings {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 25px;
+}
+
+.mb-5 {
+  margin-bottom: 30px;
+}
+
+.password-input {
+  position: relative;
+
+}
+
+.password-input i {
+  position: absolute;
+  top: 15px;
+  right: 17px;
+  cursor: pointer;
+  z-index: 10;
+  color: #AAAAAA;
+  transition: all 0.5s;
+}
+
+.password-input i:hover {
+  color: #000;
+}
+
+.login-form .inputs input {
+  background-color: initial;
+  border: 1px solid #333;
+  border: 1px solid var(--border);
+  border-radius: 0.8rem;
+  color: #e6e6e6;
+  color: var(--text-color);
+  display: block;
+  font-family: inherit;
+  outline: none;
+  padding: 0 1.6rem;
+  height: 43px;
+  width: 335px;
+  transition: all 4s;
+}
+.form-label {
+  align-items: center;
+  display: flex;
+  gap: 6px;
+  color: #e6e6e6;
+  color: var(--text-color);
+  font-family: Karla, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.green-color {
+  color: green !important;
+}
+
+.login-form .inputs input:focus {
+  border: 2px solid #890596;
+}
+
+.strength-list {
+  place-items:initial;
+  justify-items: start;
+  list-style: none;
+  direction: ltr;
+}
+
+.list-group i {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.list-group span {
+  font-size: 13px;
+  color: #aaa;
+}
+
+.login-button {
+  height: 45px;
+  width: 347px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 8px;
+  color: #777;
+  background-color: #222;
+  background-color: var(--form-button-inactive-bg);
+  color: var(--form-button-inactive-text-color);
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.5s;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.login-button:hover {
+  background-color: #A51CA9;
+}
+
+.a-tag {
+  text-decoration: none;
+  color: #890596;
+  margin-left: 6px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.form-input-group {
+  align-items: center;
+  border: 1px solid #333;
+  border: 1px solid var(--border);
+  border-radius: 0.8rem;
+  display: flex;
+  gap: 1.2rem;
+  height: 4.8rem;
+  overflow: hidden;
+  padding: 0 1.6rem;
+  width: 100%;
+}
+.form-input,
+.form-select {
+  background-color: initial;
+  border: 1px solid #333;
+  border: 1px solid var(--border);
+  border-radius: 0.8rem;
+  color: #e6e6e6;
+  color: var(--text-color);
+  display: block;
+  font-family: inherit;
+  height: 4.8rem;
+  outline: none;
+  padding: 0 1.6rem;
+  width: 100%;
+}
+.form-input-group input {
+  background-color: initial;
+  border: none;
+  color: #e6e6e6;
+  color: var(--text-color);
+  flex: 1 1;
+  font-family: inherit;
+  min-width: 0;
+  outline: none;
+}
+.auth__footer {
+  gap: 1.6rem;
+  margin-top: 4.2rem;
+}
+.form-button {
+  background-color: #222;
+  border: none;
+  border-radius: 8px;
+ 
+  cursor: pointer;
+  display: block;
+  font-family: inherit;
+  height: 4.8rem;
+  padding: 0 1.2rem;
+  width: 100%;
+  text-align: center;
+}
+.inactive{
+  color: #777;
+  color: var(--form-button-inactive-text-color);
+  background-color: var(--form-button-inactive-bg);
+}
+.active {
+  background-color: green;
+  color: #e6e6e6;
+}
